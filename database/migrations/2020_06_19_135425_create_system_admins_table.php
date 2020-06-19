@@ -16,8 +16,23 @@ class CreateSystemAdminsTable extends Migration
         Schema::create('system_admins', function ( Blueprint $table )
         {
             $table -> id();
-            
+            $table -> uuid('smart_id') -> unique();
 
+            $table -> string('first_name', 20);
+            $table -> string('middle_name', 20);
+            $table -> string('last_name', 20);
+            $table -> string('gender', 6);
+
+            $table -> string('department');
+            $table -> string('position');
+
+            $table -> string('email') -> unique();
+            $table -> timestamp('email_verified_at') -> nullable();
+
+            $table -> string('password');
+            $table -> string('status');
+
+            $table -> rememberToken();
             $table -> timestamps();
         });
     }

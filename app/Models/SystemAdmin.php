@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use App\User;
 
-class SystemAdmin extends Model
+class SystemAdmin extends User
 {
     //
 }

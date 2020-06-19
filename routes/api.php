@@ -17,3 +17,12 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+// Admin routes
+Route::domain('admin.'.env('APP_URL') ) -> group( static function ()
+{
+    Route::post('/login', 'Auth\Admins\SystemAdminLoginController@login');
+
+//    Route::apiResource( 'schools', 'SchoolController' );
+});

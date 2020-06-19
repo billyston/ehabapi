@@ -13,9 +13,16 @@ class CreatePhonesTable extends Migration
      */
     public function up()
     {
-        Schema::create('phones', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+        Schema::create('phones', function ( Blueprint $table )
+        {
+            $table -> id();
+            $table -> uuid('smart_id') -> unique();
+
+            $table -> string('phone_type');
+            $table -> string('number', 12);
+            $table -> morphs('phoneable');
+
+            $table -> timestamps();
         });
     }
 
