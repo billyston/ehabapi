@@ -6,5 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class File extends Model
 {
-    //
+    protected $guarded = [ 'id' ];
+
+    /**
+     * @return string
+     */
+    public function getRouteKeyName (){ return 'smart_id'; }
 }

@@ -13,7 +13,7 @@ class RegistrarController extends Controller
      */
     public function index()
     {
-        //
+        return "Returned All";
     }
 
     /**
@@ -22,9 +22,9 @@ class RegistrarController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store( Request $request )
     {
-        //
+        return "Created";
     }
 
     /**
@@ -33,9 +33,9 @@ class RegistrarController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show( $id )
     {
-        //
+        return "Returned Single";
     }
 
     /**
@@ -45,9 +45,9 @@ class RegistrarController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update( Request $request, $id )
     {
-        //
+        return "Updated";
     }
 
     /**
@@ -58,6 +58,6 @@ class RegistrarController extends Controller
      */
     public function destroy($id)
     {
-        //
+        return "Deleted";
     }
 }
