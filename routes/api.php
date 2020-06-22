@@ -14,15 +14,32 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+//Route::middleware('auth:api')->get('/user', function ( Request $request)
+//{
+//    return $request->user();
+//});
 
 
 // Admin routes
-Route::domain('admin.'.env('APP_URL') ) -> group( static function ()
+Route::domain('system.'.env('APP_URL') ) -> group( static function ()
 {
-    Route::post('/login', 'Auth\Admins\SystemAdminLoginController@login');
+    Route::apiResource( '', 'SystemAdminController' );
+});
 
-//    Route::apiResource( 'schools', 'SchoolController' );
+// Administrator routes
+Route::domain('administrator.'.env('APP_URL') ) -> group( static function ()
+{
+    Route::apiResource( '', 'AdministratorController' );
+});
+
+// Personnel routes
+Route::domain('personnel.'.env('APP_URL') ) -> group( static function ()
+{
+    Route::apiResource( '', 'PersonnelController' );
+});
+
+// Registrar routes
+Route::domain('registrar.'.env('APP_URL') ) -> group( static function ()
+{
+    Route::apiResource( '', 'RegistrarController' );
 });
