@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\SystemAdmins;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class PersonnelController extends Controller
+class NextOfKinController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,7 @@ class PersonnelController extends Controller
      */
     public function index()
     {
-        return "Returned All";
+        //
     }
 
     /**
@@ -22,9 +23,9 @@ class PersonnelController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store( Request $request )
+    public function store(Request $request)
     {
-        return "Created";
+        //
     }
 
     /**
@@ -33,9 +34,9 @@ class PersonnelController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show( $id )
+    public function show($id)
     {
-        return "Returned Single";
+        //
     }
 
     /**
@@ -45,9 +46,9 @@ class PersonnelController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update( Request $request, $id )
+    public function update(Request $request, $id)
     {
-        return "Updated";
+        //
     }
 
     /**
@@ -58,6 +59,6 @@ class PersonnelController extends Controller
      */
     public function destroy($id)
     {
-        return "Deleted";
+        //
     }
 }

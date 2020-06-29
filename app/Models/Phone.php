@@ -12,4 +12,12 @@ class Phone extends Model
      * @return string
      */
     public function getRouteKeyName (){ return 'smart_id'; }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\MorphTo
+     */
+    public function phoneable()
+    {
+        return $this -> morphTo();
+    }
 }

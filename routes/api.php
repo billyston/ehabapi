@@ -17,44 +17,49 @@ use Illuminate\Support\Facades\Route;
 // Admin routes
 Route::domain('system.'.env('APP_URL') ) -> group( static function ()
 {
-//    Route::post('/login', '');
+    Route::group(['namespace' => 'SystemAdmins'], function ()
+    {
+        Route::post('/login', 'AuthenticationController@login' );
 
-    Route::apiResource( 'sysadmin', 'SystemAdminController' );
-    Route::apiResource( 'hospitals', 'HospitalController' );
-    Route::apiResource( 'administrators', 'AdministratorController' );
-    Route::apiResource( 'personnel', 'PersonnelController' );
-    Route::apiResource( 'registrars', 'RegistrarController' );
+        Route::apiResource( 'sysadmin', 'SystemAdminController' );
+        Route::apiResource( 'hospitals', 'HospitalController' );
+        Route::apiResource( 'administrators', 'AdministratorController' );
+        Route::apiResource( 'specialties', 'SpecialtyController' );
+        Route::apiResource( 'services', 'ServiceController' );
+        Route::apiResource( 'schedules', 'ScheduleController' );
+        Route::apiResource( 'personnel', 'PersonnelController' );
+        Route::apiResource( 'groups', 'GroupController' );
+        Route::apiResource( 'clients', 'ClientController' );
+        Route::apiResource( 'next-of-kins', 'NextOfKinController' );
+        Route::apiResource( 'appointments', 'AppointmentController' );
+        Route::apiResource( 'registrars', 'RegistrarController' );
+    });
 });
 
 // Administrator routes
-Route::domain('administrator.'.env('APP_URL') ) -> group( static function ()
+Route::domain( 'administrator.'.env('APP_URL' ) ) -> group( static function ()
 {
-//    Route::post('/login', '');
-
-    Route::get('/profile/{profile}', 'AdministratorController@show');
-    Route::put('/update/{profile}', 'AdministratorController@update');
-    Route::patch('/update/{profile}', 'AdministratorController@update');
-
-    Route::apiResource( 'personnel', 'PersonnelController' );
-    Route::apiResource( 'registrars', 'RegistrarController' );
-});
-
-// Personnel routes
-Route::domain('personnel.'.env('APP_URL') ) -> group( static function ()
-{
-//    Route::post('/login', '');
-
-    Route::get('/profile/{profile}', 'PersonnelController@show');
-    Route::put('/update/{profile}', 'PersonnelController@update');
-    Route::patch('/update/{profile}', 'PersonnelController@update');
+    Route::group(['namespace' => 'Administrators'], function ()
+    {
+        Route::post('/login', 'AuthenticationController@login' );
+    });
 });
 
 // Registrar routes
-Route::domain('registrar.'.env('APP_URL') ) -> group( static function ()
+Route::domain( 'registrar.'.env('APP_URL') ) -> group( static function ()
 {
-//    Route::post('/login', '');
+    Route::group(['namespace' => 'Registrars'], function ()
+    {
+        Route::post('/login', 'AuthenticationController@login' );
+    });
+});
 
-    Route::get('/profile/{profile}', 'RegistrarController@show');
-    Route::put('/update/{profile}', 'RegistrarController@update');
-    Route::patch('/update/{profile}', 'RegistrarController@update');
+
+// Personnel routes
+Route::domain( 'personnel.'.env('APP_URL') ) -> group( static function ()
+{
+    Route::group(['namespace' => 'Personnel'], function ()
+    {
+        Route::post('/login', 'AuthenticationController@login' );
+    });
 });

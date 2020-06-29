@@ -2,9 +2,11 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use App\User;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\MorphOne;
 
-class Registrar extends Model
+class Registrar extends User
 {
     protected $guarded = [ 'id' ];
 
@@ -12,4 +14,36 @@ class Registrar extends Model
      * @return string
      */
     public function getRouteKeyName (){ return 'smart_id'; }
+
+    /**
+     * @return BelongsToMany
+     */
+    public function hospital(): BelongsToMany
+    {
+        return $this -> belongsToMany( Hospital::class );
+    }
+
+    /**
+     * @return MorphOne
+     */
+    public function address()
+    {
+        return $this -> morphOne( Address::class, 'addressable' );
+    }
+
+    /**
+     * @return MorphOne
+     */
+    public function phone()
+    {
+        return $this -> morphOne( Phone::class, 'phoneable' );
+    }
+
+    /**
+     * @return MorphOne
+     */
+    public function file()
+    {
+        return $this -> morphOne( Phone::class, 'fileable' );
+    }
 }

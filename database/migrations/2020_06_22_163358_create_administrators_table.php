@@ -13,9 +13,23 @@ class CreateAdministratorsTable extends Migration
      */
     public function up()
     {
-        Schema::create('administrators', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+        Schema::create('administrators', function ( Blueprint $table )
+        {
+            $table -> bigIncrements('id');
+            $table -> uuid('smart_id');
+
+            $table -> string('first_name');
+            $table -> string('middle_name');
+            $table -> string('last_name');
+            $table -> string('gender', 6);
+
+            $table -> string('email') -> unique();
+            $table -> timestamp('email_verified_at') -> nullable();
+
+            $table -> string('password');
+            $table -> string('status') ->default( 'active' );
+
+            $table -> timestamps();
         });
     }
 

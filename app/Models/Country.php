@@ -12,4 +12,12 @@ class Country extends Model
      * @return string
      */
     public function getRouteKeyName (){ return 'smart_id'; }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function address()
+    {
+        return $this -> hasMany( Address::class );
+    }
 }

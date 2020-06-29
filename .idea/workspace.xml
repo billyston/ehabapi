@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5af97b17-75a8-4dd9-96c4-60689e9e17a5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/AdministratorController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/HospitalController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/PersonnelController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/RegistrarController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_22_163361_create_personnels_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdministratorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdministratorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PersonnelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PersonnelController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RegistrarController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RegistrarController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SystemAdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SystemAdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vagrant/machines/smarthcs/virtualbox/action_provision" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/smarthcs/virtualbox/action_provision" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vagrant/machines/smarthcs/virtualbox/action_set_name" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/smarthcs/virtualbox/action_set_name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vagrant/machines/smarthcs/virtualbox/id" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/smarthcs/virtualbox/id" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vagrant/machines/smarthcs/virtualbox/index_uuid" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/smarthcs/virtualbox/index_uuid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vagrant/machines/smarthcs/virtualbox/private_key" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/smarthcs/virtualbox/private_key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdministratorController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HospitalController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PersonnelController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RegistrarController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SystemAdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/SystemAdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Address.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Address.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Administrator.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Administrator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Country.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Country.php" afterDir="false" />
@@ -14,9 +25,20 @@
       <change beforePath="$PROJECT_DIR$/app/Models/Personnel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Personnel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Phone.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Phone.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Registrar.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Registrar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/SystemAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/SystemAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/logging.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/logging.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_06_19_135425_create_system_admins_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_06_19_135425_create_system_admins_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_06_19_135538_create_countries_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_06_19_135538_create_countries_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_06_19_135643_create_addresses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_06_19_135643_create_addresses_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_06_19_135708_create_phones_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_06_19_135708_create_phones_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_06_19_135723_create_files_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_06_19_135723_create_files_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_06_22_163358_create_administrators_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_06_22_163358_create_administrators_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_06_22_163418_create_personnels_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_06_22_163439_create_registrars_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_06_22_163439_create_registrars_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,17 +53,42 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="398">
+              <caret line="60" column="43" selection-start-line="60" selection-start-column="43" selection-end-line="60" selection-end-column="43" />
+              <folding>
+                <element signature="e#630#1449#1#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Personnel/AuthenticationController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Address::addressTo</find>
+      <find>addressTo</find>
+      <find>hospital</find>
+      <find>=&gt;</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>addressable</replace>
+      <replace>administrator</replace>
+      <replace>=&gt; [</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,35 +96,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2020_06_19_135425_create_system_admins_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_06_19_135538_create_countries_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_06_19_135643_create_addresses_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_06_19_135708_create_phones_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_06_19_135723_create_files_table.php" />
-        <option value="$PROJECT_DIR$/database/seeds/SystemAdminsTableSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/.env.example" />
-        <option value="$PROJECT_DIR$/app/User.php" />
-        <option value="$PROJECT_DIR$/database/factories/SystemAdmin.php" />
-        <option value="$PROJECT_DIR$/Homestead.yaml" />
-        <option value="$PROJECT_DIR$/app/Traits/Relatives.php" />
-        <option value="$PROJECT_DIR$/config/helpers.php" />
-        <option value="$PROJECT_DIR$/app/Models/Address.php" />
-        <option value="$PROJECT_DIR$/app/Models/Administrator.php" />
-        <option value="$PROJECT_DIR$/app/Models/Country.php" />
-        <option value="$PROJECT_DIR$/app/Models/File.php" />
-        <option value="$PROJECT_DIR$/app/Models/Personnel.php" />
-        <option value="$PROJECT_DIR$/app/Models/Phone.php" />
-        <option value="$PROJECT_DIR$/app/Models/Registrar.php" />
-        <option value="$PROJECT_DIR$/app/Models/SystemAdmin.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HospitalController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/SystemAdminController.php" />
+        <option value="$PROJECT_DIR$/app/Models/Schedule.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_06_26_130525_create_appointments_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Resources/HospitalResource.php" />
+        <option value="$PROJECT_DIR$/app/Http/Resources/SpecialtyResource.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_06_22_163361_create_personnels_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/PersonnelRequest.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_06_25_085821_create_service_personnel_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Resources/AdministratorResource.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/StoreHospitalJob.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/StoreSpecialtyJob.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/StoreServiceJob.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/StoreScheduleJob.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/StorePersonnelJob.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/StoreGroupJob.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/StoreClientJob.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/StoreAppointmentJob.php" />
+        <option value="$PROJECT_DIR$/app/Observers/RegistrarObserver.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdministratorController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/PersonnelController.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/RegistrarRepositoryInterface.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/AdministratorRepositoryInterface.php" />
+        <option value="$PROJECT_DIR$/app/Http/Resources/RegistrarResource.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/RegistrarController.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/UpdateRegistrarJob.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/RegistrarRepository.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_06_22_163439_create_registrars_table.php" />
+        <option value="$PROJECT_DIR$/app/Models/Registrar.php" />
+        <option value="$PROJECT_DIR$/app/Models/Hospital.php" />
+        <option value="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/RegistrarRequest.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/StoreRegistrarJob.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/StoreAdministratorJob.php" />
+        <option value="$PROJECT_DIR$/app/Observers/AdministratorObserver.php" />
+        <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_06_28_224357_create_hospital_registrar_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/HospitalController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/AdministratorController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/AppointmentController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/ClientController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/GroupController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/NextOfKinController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/PersonnelController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/RegistrarController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/ScheduleController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/ServiceController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/SpecialtyController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/SystemAdminController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/AuthenticationController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Registrars/AuthenticationController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Administrators/AuthenticationController.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Personnel/AuthenticationController.php" />
       </list>
     </option>
   </component>
@@ -197,6 +266,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -226,25 +296,120 @@
               <item name="smarthcs-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="smarthcs-api" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Middleware" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smarthcs-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smarthcs-api" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Requests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smarthcs-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smarthcs-api" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smarthcs-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smarthcs-api" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Jobs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smarthcs-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smarthcs-api" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smarthcs-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smarthcs-api" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Observers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smarthcs-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smarthcs-api" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Providers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smarthcs-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smarthcs-api" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Repositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smarthcs-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smarthcs-api" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Rules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smarthcs-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smarthcs-api" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Traits" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smarthcs-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smarthcs-api" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smarthcs-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smarthcs-api" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smarthcs-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smarthcs-api" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="factories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smarthcs-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smarthcs-api" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smarthcs-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smarthcs-api" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="seeds" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="smarthcs-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="smarthcs-api" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="smarthcs-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smarthcs-api" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smarthcs-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smarthcs-api" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -252,7 +417,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Administrators" />
+      <recent name="$PROJECT_DIR$/app/Repositories" />
+      <recent name="$PROJECT_DIR$/app/Rules" />
+      <recent name="$PROJECT_DIR$/database/seeds" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/SystemAdmins" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -294,18 +467,123 @@
       <workItem from="1592842214520" duration="1524000" />
       <workItem from="1592844094492" duration="1625000" />
       <workItem from="1592846001660" duration="1633000" />
-      <workItem from="1592847851454" duration="953000" />
+      <workItem from="1592847851454" duration="1712000" />
+      <workItem from="1592853217873" duration="1749000" />
+      <workItem from="1592855155588" duration="1788000" />
+      <workItem from="1592856977197" duration="1803000" />
+      <workItem from="1592858804017" duration="1692000" />
+      <workItem from="1592860697818" duration="835000" />
+      <workItem from="1592862591342" duration="1785000" />
+      <workItem from="1592864700381" duration="1752000" />
+      <workItem from="1592866515942" duration="1747000" />
+      <workItem from="1592868339191" duration="1673000" />
+      <workItem from="1592870496846" duration="808000" />
+      <workItem from="1592900964582" duration="1450000" />
+      <workItem from="1592902863824" duration="473000" />
+      <workItem from="1592922160424" duration="388000" />
+      <workItem from="1592938153792" duration="864000" />
+      <workItem from="1592942851690" duration="980000" />
+      <workItem from="1592947456002" duration="1529000" />
+      <workItem from="1592949266481" duration="1806000" />
+      <workItem from="1592951093623" duration="1794000" />
+      <workItem from="1592953045291" duration="1627000" />
+      <workItem from="1592954871998" duration="1743000" />
+      <workItem from="1592956707853" duration="1792000" />
+      <workItem from="1592958531437" duration="718000" />
+      <workItem from="1592960347758" duration="271000" />
+      <workItem from="1592986538455" duration="507000" />
+      <workItem from="1592988359775" duration="940000" />
+      <workItem from="1592994391547" duration="1637000" />
+      <workItem from="1592996216198" duration="1470000" />
+      <workItem from="1592998376367" duration="1887000" />
+      <workItem from="1593000645240" duration="1714000" />
+      <workItem from="1593002491716" duration="1784000" />
+      <workItem from="1593004306675" duration="2145000" />
+      <workItem from="1593007652353" duration="1737000" />
+      <workItem from="1593009894039" duration="1545000" />
+      <workItem from="1593011750748" duration="1463000" />
+      <workItem from="1593013617838" duration="1466000" />
+      <workItem from="1593016642614" duration="1666000" />
+      <workItem from="1593018504423" duration="1581000" />
+      <workItem from="1593020319105" duration="1028000" />
+      <workItem from="1593025110565" duration="1790000" />
+      <workItem from="1593026925105" duration="1137000" />
+      <workItem from="1593037212060" duration="530000" />
+      <workItem from="1593039421445" duration="1333000" />
+      <workItem from="1593041280070" duration="1581000" />
+      <workItem from="1593043149209" duration="1129000" />
+      <workItem from="1593045488766" duration="942000" />
+      <workItem from="1593071341671" duration="1813000" />
+      <workItem from="1593074164009" duration="1786000" />
+      <workItem from="1593075978256" duration="1614000" />
+      <workItem from="1593077796118" duration="1466000" />
+      <workItem from="1593080422373" duration="1485000" />
+      <workItem from="1593082287510" duration="596000" />
+      <workItem from="1593088474176" duration="718000" />
+      <workItem from="1593093867192" duration="1373000" />
+      <workItem from="1593095692678" duration="1312000" />
+      <workItem from="1593097986255" duration="1493000" />
+      <workItem from="1593099862220" duration="925000" />
+      <workItem from="1593101801638" duration="1731000" />
+      <workItem from="1593103616897" duration="1267000" />
+      <workItem from="1593123366932" duration="1788000" />
+      <workItem from="1593125181536" duration="1730000" />
+      <workItem from="1593127004809" duration="976000" />
+      <workItem from="1593157055108" duration="1534000" />
+      <workItem from="1593158869856" duration="1265000" />
+      <workItem from="1593160758605" duration="1583000" />
+      <workItem from="1593162796338" duration="1755000" />
+      <workItem from="1593164675680" duration="1107000" />
+      <workItem from="1593168872227" duration="1531000" />
+      <workItem from="1593173999641" duration="1364000" />
+      <workItem from="1593176619314" duration="1151000" />
+      <workItem from="1593190378719" duration="1284000" />
+      <workItem from="1593199928323" duration="859000" />
+      <workItem from="1593229677928" duration="1792000" />
+      <workItem from="1593231504073" duration="1764000" />
+      <workItem from="1593233342488" duration="937000" />
+      <workItem from="1593236342026" duration="315000" />
+      <workItem from="1593242532828" duration="1377000" />
+      <workItem from="1593244347453" duration="1779000" />
+      <workItem from="1593246161241" duration="1623000" />
+      <workItem from="1593247988539" duration="1230000" />
+      <workItem from="1593249804087" duration="1366000" />
+      <workItem from="1593252016207" duration="1544000" />
+      <workItem from="1593253828273" duration="1019000" />
+      <workItem from="1593255650674" duration="935000" />
+      <workItem from="1593302875831" duration="1719000" />
+      <workItem from="1593304894273" duration="443000" />
+      <workItem from="1593306777851" duration="244000" />
+      <workItem from="1593346249022" duration="1387000" />
+      <workItem from="1593348076435" duration="1576000" />
+      <workItem from="1593349895991" duration="975000" />
+      <workItem from="1593351719805" duration="1553000" />
+      <workItem from="1593353538123" duration="900000" />
+      <workItem from="1593355663041" duration="1597000" />
+      <workItem from="1593357483068" duration="1636000" />
+      <workItem from="1593359375000" duration="1685000" />
+      <workItem from="1593361202049" duration="1418000" />
+      <workItem from="1593363020124" duration="834000" />
+      <workItem from="1593365103454" duration="1438000" />
+      <workItem from="1593367050617" duration="1726000" />
+      <workItem from="1593368867994" duration="1767000" />
+      <workItem from="1593371831253" duration="385000" />
+      <workItem from="1593378221770" duration="1230000" />
+      <workItem from="1593380053580" duration="1785000" />
+      <workItem from="1593381863379" duration="1451000" />
+      <workItem from="1593383685629" duration="1559000" />
+      <workItem from="1593385501023" duration="1483000" />
+      <workItem from="1593387362235" duration="1790000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15017000" />
+    <option name="totallyTimeSpent" value="159623000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27110156" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4170243" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -319,8 +597,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -331,34 +609,340 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Vagrantfile">
+    <entry file="file://$PROJECT_DIR$/app/Jobs/StoreClientJob.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+          <folding>
+            <element signature="e#28#64#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/StoreAppointmentJob.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="e#28#69#0#PHP" expanded="true" />
+            <element signature="e#493#597#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/StorePersonnelJob.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="56" column="96" selection-start-line="56" selection-start-column="96" selection-end-line="56" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+    <entry file="file://$PROJECT_DIR$/app/Observers/AddressObserver.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="22" selection-end-column="33" />
+        <state relative-caret-position="272">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_06_19_135538_create_countries_table.php">
+    <entry file="file://$PROJECT_DIR$/app/Repositories/HospitalRepositoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#36#74#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/AdministratorRepositoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#36#79#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/RegistrarRepositoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#36#75#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/AdministratorResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding>
+            <element signature="e#143#277#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/RegistrarRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/UpdateAdministratorJob.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#28#71#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/UpdateRegistrarJob.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="e#28#67#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/RegistrarResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Administrator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#30#43#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Registrar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+          <folding>
+            <element signature="e#30#43#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Hospital.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="37" column="78" selection-start-line="37" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_06_22_163439_create_registrars_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_06_22_163358_create_administrators_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/AdministratorRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-513">
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/RegistrarRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-513">
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/StoreAdministratorJob.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="74" column="59" selection-start-line="74" selection-start-column="59" selection-end-line="74" selection-end-column="59" />
+          <folding>
+            <element signature="e#28#71#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/StoreRegistrarJob.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1184">
+          <caret line="74" column="50" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="50" />
+          <folding>
+            <element signature="e#28#67#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Observers/RegistrarObserver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Observers/AdministratorObserver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_06_23_231953_administrator_hospital.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="25" column="107" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="25" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_06_28_224357_create_hospital_registrar_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="32" column="19" lean-forward="true" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/AppointmentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/GroupController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/ClientController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="4" selection-end-column="36" />
+          <folding>
+            <element signature="e#53#89#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/HospitalController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding>
+            <element signature="e#53#89#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_06_19_135643_create_addresses_table.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/NextOfKinController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="64">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_06_19_135723_create_files_table.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/PersonnelController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="64">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/RegistrarController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+          <folding>
+            <element signature="e#238#353#0#PHP" />
+            <element signature="e#358#506#0#PHP" />
+            <element signature="e#512#598#0#PHP" />
+            <element signature="e#926#993#0#PHP" />
+            <element signature="e#1121#1237#0#PHP" />
+            <element signature="e#1424#1495#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/ScheduleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/ServiceController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/SpecialtyController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/SystemAdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/AdministratorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2020-06-28.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-6027">
+          <caret line="3462" column="69" selection-start-line="3462" selection-start-column="69" selection-end-line="3462" selection-end-column="69" />
         </state>
       </provider>
     </entry>
@@ -369,37 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/SystemAdminsTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#7#34#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_06_19_135425_create_system_admins_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env.example">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/factories/SystemAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -407,150 +960,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
+    <entry file="file://$PROJECT_DIR$/database/seeds/SystemAdminsTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="45" column="59" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
+        <state relative-caret-position="256">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Homestead.yaml">
+    <entry file="file://$PROJECT_DIR$/database/seeds/CountriesTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="352">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SystemAdmins/AuthenticationController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="64">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#53#89#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Traits/Relatives.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Registrars/AuthenticationController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="160">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/helpers.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Administrators/AuthenticationController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_06_19_135708_create_phones_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Administrator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Address.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="60" lean-forward="true" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Country.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/File.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Personnel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Phone.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Registrar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/SystemAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HospitalController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SystemAdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="61" column="5" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="61" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdministratorController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PersonnelController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RegistrarController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="976">
-          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="160">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="398">
+          <caret line="60" column="43" selection-start-line="60" selection-start-column="43" selection-end-line="60" selection-end-column="43" />
+          <folding>
+            <element signature="e#630#1449#1#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Personnel/AuthenticationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
         </state>
       </provider>
     </entry>

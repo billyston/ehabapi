@@ -15,11 +15,12 @@ class CreatePhonesTable extends Migration
     {
         Schema::create('phones', function ( Blueprint $table )
         {
-            $table -> id();
+            $table -> bigIncrements('id');
             $table -> uuid('smart_id') -> unique();
 
-            $table -> string('phone_type');
-            $table -> string('number', 12);
+            $table -> string('mobile_phone', 12 );
+            $table -> string('other_phone', 12 );
+
             $table -> morphs('phoneable');
 
             $table -> timestamps();

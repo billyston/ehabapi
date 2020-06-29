@@ -15,7 +15,7 @@ class CreateSystemAdminsTable extends Migration
     {
         Schema::create('system_admins', function ( Blueprint $table )
         {
-            $table -> id();
+            $table -> bigIncrements('id');
             $table -> uuid('smart_id') -> unique();
 
             $table -> string('first_name', 20);
