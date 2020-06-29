@@ -33,6 +33,9 @@ class ServiceRequest extends FormRequest
                 'data.attributes.name'                                              => [ 'sometimes', 'string' ],
                 'data.attributes.known_as'                                          => [ 'sometimes', 'string' ],
                 'data.attributes.description'                                       => [ 'sometimes', 'string', 'min:50' ],
+
+                'data.attributes.starts_at'                                         => [ 'sometimes' ],
+                'data.attributes.ends_at'                                           => [ 'sometimes' ],
             ];
         }
 
@@ -44,9 +47,22 @@ class ServiceRequest extends FormRequest
             'data.attributes.known_as'                                              => [ 'required', 'string' ],
             'data.attributes.description'                                           => [ 'nullable', 'min:50' ],
 
+            'data.attributes.start_time'                                            => [ 'required', 'date_format:H:i' ],
+            'data.attributes.end_time'                                              => [ 'required', 'date_format:H:i' ],
+
             'data.relationships.specialty'                                          => [ 'required' ],
             'data.relationships.specialty.type'                                     => [ 'required', 'in:Specialty' ],
             'data.relationships.specialty.id'                                       => [ 'required', 'exists:specialties,id' ],
+        ];
+    }
+
+    /**
+     * @return array
+     */
+    public function messages()
+    {
+        return
+        [
         ];
     }
 }

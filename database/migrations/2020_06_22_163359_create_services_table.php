@@ -23,6 +23,9 @@ class CreateServicesTable extends Migration
             $table -> string('known_as') -> unique();
             $table -> string('description') -> nullable();
 
+            $table -> time('start_time');
+            $table -> time('end_time');
+
             $table -> timestamps();
 
             $table -> foreign('specialty_id') -> references('id' ) -> on ('specialties' ) -> onDelete('cascade' );

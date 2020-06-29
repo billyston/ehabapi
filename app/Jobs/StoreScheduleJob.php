@@ -33,6 +33,7 @@ class StoreScheduleJob implements ShouldQueue
         try
         {
             $Schedule = new Schedule( $this -> theRequest [ 'data.attributes' ] );
+            $Schedule -> service() -> associate( $this -> theRequest [ 'data.relationships.service.data.id' ] );
             $Schedule -> save();
 
             // Return schedule resource

@@ -28,9 +28,11 @@ class ServiceResource extends JsonResource
                 'updated_at'        => $this -> updated_at -> toDateTimeString(),
             ],
 
-            'include' => $this -> when( $this -> relationLoaded( 'specialty' ),
+            'include' => $this -> when( $this -> relationLoaded( 'specialty' ) || $this -> relationLoaded( 'schedule' ) || $this -> relationLoaded( 'personnel' ),
             [
-                'specialty' => new SpecialtyResource( $this -> whenLoaded('specialty' ) )
+                'specialty'         => new SpecialtyResource( $this -> whenLoaded('specialty' ) ),
+                'schedule'          => ScheduleResource::collection( $this -> whenLoaded('schedule') ),
+                'personnel'         => PersonnelResource::collection( $this -> whenLoaded('personnel') ),
             ])
         ];
     }

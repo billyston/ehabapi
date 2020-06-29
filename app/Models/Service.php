@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Service extends Model
 {
@@ -21,6 +22,14 @@ class Service extends Model
     public function specialty(): BelongsTo
     {
         return $this -> belongsTo(Specialty::class );
+    }
+
+    /**
+     * @return BelongsTo
+     */
+    public function schedule(): HasMany
+    {
+        return $this -> hasMany(Schedule::class );
     }
 
     /**

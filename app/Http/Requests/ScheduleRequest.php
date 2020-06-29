@@ -39,6 +39,9 @@ class ScheduleRequest extends FormRequest
             'data.type'                                                             => [ 'required', 'string', 'in:Schedule' ],
             'data.attributes.starts_at'                                             => [ 'required' ],
             'data.attributes.ends_at'                                               => [ 'required' ],
+
+            'data.relationships.service.data.type'                                  => [ 'required', 'string', 'in:Service' ],
+            'data.relationships.service.data.id'                                    => [ 'required', 'string', 'exists:services,id' ],
         ];
     }
 }

@@ -39,12 +39,15 @@ class PersonnelResource extends JsonResource
                 'updated_at'        => $this -> updated_at -> toDateTimeString(),
             ],
 
-            'include' => $this -> when( $this -> relationLoaded( 'address' ) || $this -> relationLoaded( 'phone' ) || $this -> relationLoaded( 'hospital' ) || $this -> relationLoaded( 'schedule' ) || $this -> relationLoaded( 'appointment' ),
+            'include' => $this -> when( $this -> relationLoaded( 'address' ) || $this -> relationLoaded( 'phone' ) || $this -> relationLoaded( 'hospital' ) || $this -> relationLoaded( 'specialty' ) || $this -> relationLoaded( 'service' ) || $this -> relationLoaded( 'schedule' ) || $this -> relationLoaded( 'appointment' ),
             [
                 'address'           => new AddressResource( $this -> whenLoaded( 'address' ) ),
                 'phone'             => new PhoneResource( $this -> whenLoaded( 'phone' ) ),
+
                 'appointment'       => new AppointmentResource( $this -> whenLoaded( 'appointment' ) ),
                 'hospital'          => HospitalResource::collection( $this -> whenLoaded('hospital') ),
+                'specialty'         => new SpecialtyResource( $this -> whenLoaded( 'specialty' ) ),
+                'service'           => ServiceResource::collection( $this -> whenLoaded('service') ),
                 'schedule'          => ScheduleResource::collection( $this -> whenLoaded('schedule') ),
             ])
         ];
