@@ -3,10 +3,21 @@
 namespace App\Http\Controllers\SystemAdmins;
 
 use App\Http\Controllers\Controller;
+use App\Traits\AuthenticatesJwtUsers;
 use Illuminate\Http\Request;
 
 class SystemAdminController extends Controller
 {
+    use AuthenticatesJwtUsers;
+
+    /**
+     * SystemAdminController constructor.
+     */
+    public function __construct()
+    {
+        $this -> setGuardName( 'system' );
+    }
+
     /**
      * Display a listing of the resource.
      *

@@ -55,7 +55,7 @@ class PersonnelRequest extends FormRequest
             'data.attributes.role'                                                  => [ 'sometimes', 'string', 'in:'.implode(',', Personnel::ROLES ) ],
 
             'data.attributes.email'                                                 => [ 'required', 'email', 'unique:personnels,email' ],
-            'data.attributes.password'                                              => [ 'required', 'min:6' ],
+            'data.attributes.password'                                              => [ 'required', 'string', 'min:6', 'max:50' ],
 
             // Hospitals
             'data.relationships.hospital'                                           => [ 'required' ],

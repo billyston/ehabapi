@@ -1,5 +1,7 @@
 <?php
 
+use App\User;
+
 return [
 
     /*
@@ -35,13 +37,46 @@ return [
     |
     */
 
-    'guards' => [
-        'web' => [
+    'guards' =>
+    [
+        'system' =>
+        [
+            'driver' => 'jwt',
+            'provider' => 'systems',
+        ],
+
+        'administrator' =>
+        [
+            'driver' => 'jwt',
+            'provider' => 'administrators',
+        ],
+
+        'registrar' =>
+        [
+            'driver' => 'jwt',
+            'provider' => 'registrars',
+        ],
+
+        'personnel' =>
+        [
+            'driver' => 'jwt',
+            'provider' => 'personnels',
+        ],
+
+        'client' =>
+        [
+            'driver' => 'jwt',
+            'provider' => 'clients',
+        ],
+
+        'web' =>
+        [
             'driver' => 'session',
             'provider' => 'users',
         ],
 
-        'api' => [
+        'api' =>
+        [
             'driver' => 'token',
             'provider' => 'users',
             'hash' => false,
@@ -65,16 +100,43 @@ return [
     |
     */
 
-    'providers' => [
-        'users' => [
+    'providers' =>
+    [
+        'systems' =>
+        [
+            'driver' => 'eloquent',
+            'model' => App\Models\SystemAdmin::class,
+        ],
+
+        'administrators' =>
+        [
+            'driver' => 'eloquent',
+            'model' => App\Models\Administrator::class,
+        ],
+
+        'registrars' =>
+        [
+            'driver' => 'eloquent',
+            'model' => App\Models\Registrar::class,
+        ],
+
+        'personnels' =>
+        [
+            'driver' => 'eloquent',
+            'model' => App\Models\Personnel::class,
+        ],
+
+        'clients' =>
+        [
+            'driver' => 'eloquent',
+            'model' => App\Models\Client::class,
+        ],
+
+        'users' =>
+        [
             'driver' => 'eloquent',
             'model' => App\User::class,
         ],
-
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
     ],
 
     /*

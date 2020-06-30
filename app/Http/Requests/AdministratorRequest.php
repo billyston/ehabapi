@@ -46,7 +46,7 @@ class AdministratorRequest extends FormRequest
             'data.attributes.gender'                                                => [ 'required', 'string', 'in:male,female' ],
 
             'data.attributes.email'                                                 => [ 'required', 'email', 'unique:administrators,email' ],
-            'data.attributes.password'                                              => [ 'required', 'min:4' ],
+            'data.attributes.password'                                              => [ 'required', 'string', 'min:6', 'max:50' ],
 
             // Hospitals
             'data.relationships.hospital'                                           => [ 'required' ],

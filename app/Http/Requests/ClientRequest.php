@@ -54,6 +54,7 @@ class ClientRequest extends FormRequest
             'data.attributes.nationality'                                           => [ 'sometimes', 'string' ],
 
             'data.attributes.email'                                                 => [ 'sometimes', 'email', 'unique:clients,email' ],
+            'data.attributes.password'                                              => [ 'sometimes', 'string', 'min:6', 'max:50' ],
 
             // Hospitals
             'data.relationships.hospital'                                           => [ 'required' ],
