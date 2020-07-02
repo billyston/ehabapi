@@ -2,6 +2,11 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\AdministratorGuard;
+use App\Http\Middleware\ClientGuard;
+use App\Http\Middleware\PersonnelGuard;
+use App\Http\Middleware\RegistrarGuard;
+use App\Http\Middleware\SystemAdminGuard;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -64,10 +69,10 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
 
-        'auth.system' => \App\Http\Middleware\SystemAdminGuard::class,
-        'auth.administrator' => \App\Http\Middleware\AdministratorGuard::class,
-        'auth.registrar' => \App\Http\Middleware\RegistrarGuard::class,
-        'auth.personnel' => \App\Http\Middleware\PersonnelGuard::class,
-        'auth.client' => \App\Http\Middleware\ClientGuard::class,
+        'auth.system'           => SystemAdminGuard::class,
+        'auth.administrator'    => AdministratorGuard::class,
+        'auth.registrar'        => RegistrarGuard::class,
+        'auth.personnel'        => PersonnelGuard::class,
+        'auth.client'           => ClientGuard::class,
     ];
 }
