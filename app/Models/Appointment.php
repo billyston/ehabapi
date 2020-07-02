@@ -16,7 +16,7 @@ class Appointment extends Model
     public function getRouteKeyName (){ return 'smart_id'; }
 
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     * @return BelongsToMany
      */
     public function client(): BelongsToMany
     {
@@ -31,13 +31,20 @@ class Appointment extends Model
         return $this -> belongsTo( Group::class );
     }
 
-
     /**
      * @return BelongsTo
      */
     public function schedule(): BelongsTo
     {
         return $this -> belongsTo( Schedule::class );
+    }
+
+    /**
+     * @return BelongsTo
+     */
+    public function notification(): BelongsTo
+    {
+        return $this -> belongsTo( Notification::class );
     }
 
     /**

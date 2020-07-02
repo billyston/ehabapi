@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7f5f10a6bd72eee0d1f92ea4ee2d31b",
+    "content-hash": "ab0f2c908d60a3eacd852fc3ad067fe6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4456,16 +4456,16 @@
         },
         {
             "name": "laravel/homestead",
-            "version": "v10.8.1",
+            "version": "v10.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/homestead.git",
-                "reference": "489c6942cb9fa7f57231e89c0b01cdedde6f4b47"
+                "reference": "ea76d795e0518b534b9244160b9a96dffe517cbe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/homestead/zipball/489c6942cb9fa7f57231e89c0b01cdedde6f4b47",
-                "reference": "489c6942cb9fa7f57231e89c0b01cdedde6f4b47",
+                "url": "https://api.github.com/repos/laravel/homestead/zipball/ea76d795e0518b534b9244160b9a96dffe517cbe",
+                "reference": "ea76d795e0518b534b9244160b9a96dffe517cbe",
                 "shasum": ""
             },
             "require": {
@@ -4497,7 +4497,7 @@
                 }
             ],
             "description": "A virtual machine for web artisans.",
-            "time": "2020-05-23T12:51:56+00:00"
+            "time": "2020-07-01T00:16:34+00:00"
         },
         {
             "name": "mockery/mockery",
