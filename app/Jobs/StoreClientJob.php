@@ -51,7 +51,7 @@ class StoreClientJob implements ShouldQueue
             ( new StorePhoneJob( $this -> theRequest, $Client ) ) -> handle();
 
             // Return the resource of the created model
-            return ( new ClientResource( $Client ) ) -> response() -> setStatusCode( 201 );
+            return response( new ClientResource( $Client ), 201 );
         }
 
         catch ( Exception $exception )

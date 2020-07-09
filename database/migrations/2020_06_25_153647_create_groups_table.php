@@ -20,7 +20,8 @@ class CreateGroupsTable extends Migration
 
             $table -> string('name');
             $table -> string('heading');
-            $table -> text('message');
+            $table -> string( 'client_message' );
+            $table -> string( 'personnel_message' );
 
             $table -> timestamps();
         });
@@ -33,6 +34,6 @@ class CreateGroupsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('groups');
+        Schema::dropIfExists('groups' );
     }
 }

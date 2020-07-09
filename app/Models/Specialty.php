@@ -30,12 +30,4 @@ class Specialty extends Model
     {
         return $this -> hasMany( Service::class );
     }
-
-    /**
-     * @return HasMany
-     */
-    public function personnel(): HasMany
-    {
-        return $this -> hasMany( Personnel::class );
-    }
 }

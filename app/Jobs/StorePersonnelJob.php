@@ -35,7 +35,6 @@ class StorePersonnelJob implements ShouldQueue
         {
             // Store new personnel
             $Personnel = new Personnel( $this-> getAttributes()[ 'attributes' ] );
-            $Personnel -> specialty() -> associate( $this -> theRequest [ 'data.relationships.specialty.data.id' ] );
             $Personnel -> save();
 
             // Assign hospital(s) to personnel
@@ -44,7 +43,7 @@ class StorePersonnelJob implements ShouldQueue
             // Assign hospital(s) to personnel
             $this -> attachService( $Personnel, $this -> getAttributes()[ 'relationships' ][ 'service' ] );
 
-            // Assign hospital(s) to personnel
+            // Assign schedule(s) to personnel
             $this -> attachSchedules( $Personnel, $this -> getAttributes()[ 'relationships' ][ 'schedule' ] );
 
             // Store the address
@@ -54,7 +53,8 @@ class StorePersonnelJob implements ShouldQueue
             ( new StorePhoneJob( $this -> theRequest, $Personnel ) ) -> handle();
 
             // Return personnel resource
-            return ( new PersonnelResource( $Personnel ) ) -> response() -> setStatusCode(201 );
+            return response( new PersonnelResource( $Personnel ), 201 );
+//            return ( new PersonnelResource( $Personnel ) ) -> response() -> setStatusCode(201 );
         }
 
         catch ( Exception $exception )
@@ -93,7 +93,7 @@ class StorePersonnelJob implements ShouldQueue
     {
         foreach ( $services[ 'data' ] as $service )
         {
-            $personnel -> service() -> attach( $service[ 'id' ] );
+            $personnel -> doctorService() -> attach( $service[ 'id' ] );
         }
     }
 

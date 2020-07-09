@@ -54,7 +54,6 @@ class HospitalRequest extends FormRequest
             'data.relationships.address.data.attributes.region'                     => [ 'required', 'string' ],
             'data.relationships.address.data.attributes.city'                       => [ 'required', 'string' ],
             'data.relationships.address.data.attributes.street_name'                => [ 'required', 'string' ],
-            'data.relationships.address.data.attributes.house_number'               => [ 'string' ],
 
             // Country
             'data.relationships.address.data.relationships.country'                 => [ 'required' ],

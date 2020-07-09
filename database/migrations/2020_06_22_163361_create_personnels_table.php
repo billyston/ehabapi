@@ -17,7 +17,6 @@ class CreatePersonnelsTable extends Migration
         {
             $table -> id();
             $table -> uuid('smart_id') -> index();
-            $table -> unsignedBigInteger('specialty_id' );
 
             $table -> string('title');
             $table -> string('first_name');
@@ -25,7 +24,7 @@ class CreatePersonnelsTable extends Migration
             $table -> string('last_name');
             $table -> string('gender', 6);
 
-            $table->string('role') -> index();
+            $table -> string('role') -> index();
 
             $table -> string('facebook' ) -> nullable();
             $table -> string('twitter' ) -> nullable();
@@ -34,12 +33,10 @@ class CreatePersonnelsTable extends Migration
             $table -> string('email') -> unique();
             $table -> timestamp('email_verified_at') -> nullable();
 
-            $table -> string('password');
+            $table -> string('password') -> nullable();
             $table -> string('status') ->default( 'active' );
 
             $table -> timestamps();
-
-            $table -> foreign('specialty_id')    -> references('id') -> on('specialties')  -> onDelete('cascade' );
         });
     }
 

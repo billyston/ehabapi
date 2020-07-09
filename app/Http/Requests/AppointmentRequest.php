@@ -29,7 +29,7 @@ class AppointmentRequest extends FormRequest
             [
                 'data'                                                              => [ 'required' ],
                 'data.id'                                                           => [ 'required', 'string', 'exists:appointments,id' ],
-                'data.type'                                                         => [ 'required', 'string', 'in:Schedule' ],
+                'data.type'                                                         => [ 'required', 'string', 'in:Appointment' ],
 
                 'data.attributes.appointment_date'                                  => [ 'sometimes', 'date_format:Y-m-d:H:i:s', 'after:yesterday' ],
             ];
@@ -38,7 +38,7 @@ class AppointmentRequest extends FormRequest
         return
         [
             'data'                                                                  => [ 'required' ],
-            'data.type'                                                             => [ 'required', 'string', 'in:Schedule' ],
+            'data.type'                                                             => [ 'required', 'string', 'in:Appointment' ],
             'data.attributes.appointment_date'                                      => [ 'required', 'date_format:Y-m-d', 'after:yesterday' ],
 
             // Schedules

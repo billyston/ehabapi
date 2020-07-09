@@ -22,7 +22,8 @@ class GroupResource extends JsonResource
                 'smart_id'          => $this -> smart_id,
                 'name'              => $this -> name,
                 'heading'           => $this -> heading,
-                'message'           => $this -> message,
+                'client_message'    => $this -> client_message,
+                'personnel_message' => $this -> personnel_message,
 
                 'created_at'        => $this -> created_at -> toDateTimeString(),
                 'updated_at'        => $this -> updated_at -> toDateTimeString(),

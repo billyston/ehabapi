@@ -33,7 +33,8 @@ class GroupRequest extends FormRequest
 
                 'data.attributes.name'                                              => [ 'sometimes', 'string' ],
                 'data.attributes.heading'                                           => [ 'sometimes', 'string' ],
-                'data.attributes.message'                                           => [ 'sometimes', 'string' ]
+                'data.attributes.client_message'                                    => [ 'sometimes', 'string' ],
+                'data.attributes.personnel_message'                                 => [ 'sometimes', 'string' ]
             ];
         }
 
@@ -44,7 +45,8 @@ class GroupRequest extends FormRequest
 
             'data.attributes.name'                                                  => [ 'required', 'string' ],
             'data.attributes.heading'                                               => [ 'sometimes', 'string' ],
-            'data.attributes.message'                                               => [ 'required', 'string' ],
+            'data.attributes.client_message'                                        => [ 'required', 'string' ],
+            'data.attributes.personnel_message'                                     => [ 'required', 'string' ]
         ];
     }
 }

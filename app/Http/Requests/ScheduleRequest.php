@@ -37,11 +37,11 @@ class ScheduleRequest extends FormRequest
         [
             'data'                                                                  => [ 'required' ],
             'data.type'                                                             => [ 'required', 'string', 'in:Schedule' ],
-            'data.attributes.starts_at'                                             => [ 'required' ],
-            'data.attributes.ends_at'                                               => [ 'required' ],
+            'data.attributes.starts_at'                                             => [ 'required', 'string' ],
+            'data.attributes.ends_at'                                               => [ 'required', 'string' ],
 
-            'data.relationships.service.data.type'                                  => [ 'required', 'string', 'in:Service' ],
-            'data.relationships.service.data.id'                                    => [ 'required', 'string', 'exists:services,id' ],
+            'data.relationships.service.type'                                       => [ 'required', 'in:Service' ],
+            'data.relationships.service.id'                                         => [ 'required', 'exists:services,id' ],
         ];
     }
 }

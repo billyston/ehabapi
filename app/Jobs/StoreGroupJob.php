@@ -38,7 +38,7 @@ class StoreGroupJob implements ShouldQueue
             $Group -> refresh();
 
             // Return group resource
-            return ( new GroupResource( $Group ) ) -> response() -> setStatusCode(201 );
+            return response( new GroupResource( $Group ), 201 );
         }
 
         catch ( \Exception $exception )

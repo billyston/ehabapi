@@ -17,14 +17,14 @@ class CreateSchedulesTable extends Migration
         {
             $table -> id();
             $table -> uuid('smart_id') -> index();
-            $table -> unsignedBigInteger('service_id');
+            $table -> unsignedBigInteger('service_id' );
 
-            $table -> time('starts_at');
-            $table -> time('ends_at');
+            $table -> string('starts_at');
+            $table -> string('ends_at');
 
             $table -> timestamps();
 
-            $table -> foreign('service_id') -> references('id' ) -> on ('services' ) -> onDelete('cascade' );
+            $table -> foreign('service_id' ) -> references('id' ) -> on ('services' ) -> onDelete('cascade' );
         });
     }
 

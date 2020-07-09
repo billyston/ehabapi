@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 
 class Hospital extends Model
@@ -46,6 +47,22 @@ class Hospital extends Model
     public function specialty(): HasMany
     {
         return $this -> hasMany( Specialty::class );
+    }
+
+    /**
+     * @return HasManyThrough
+     */
+    public function service(): HasManyThrough
+    {
+        return $this -> hasManyThrough(Service::class, Specialty::class);
+    }
+
+    /**
+     * @return HasManyThrough
+     */
+    public function schedule(): HasManyThrough
+    {
+        return $this -> hasManyThrough(Schedule::class, Service::class);
     }
 
     /**

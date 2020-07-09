@@ -34,8 +34,8 @@ class ServiceRequest extends FormRequest
                 'data.attributes.known_as'                                          => [ 'sometimes', 'string' ],
                 'data.attributes.description'                                       => [ 'sometimes', 'string', 'min:50' ],
 
-                'data.attributes.starts_at'                                         => [ 'sometimes' ],
-                'data.attributes.ends_at'                                           => [ 'sometimes' ],
+                'data.attributes.starts_at'                                         => [ 'sometimes', 'date_format:h:mm a' ],
+                'data.attributes.ends_at'                                           => [ 'sometimes', 'date_format:h:mm a' ],
             ];
         }
 
@@ -44,11 +44,11 @@ class ServiceRequest extends FormRequest
             'data'                                                                  => [ 'required' ],
             'data.type'                                                             => [ 'required', 'string', 'in:Service' ],
             'data.attributes.name'                                                  => [ 'required', 'string' ],
-            'data.attributes.known_as'                                              => [ 'required', 'string' ],
+            'data.attributes.known_as'                                              => [ 'nullable', 'string' ],
             'data.attributes.description'                                           => [ 'nullable', 'min:50' ],
 
-            'data.attributes.start_time'                                            => [ 'required', 'date_format:H:i' ],
-            'data.attributes.end_time'                                              => [ 'required', 'date_format:H:i' ],
+            'data.attributes.start_time'                                            => [ 'required', ],
+            'data.attributes.end_time'                                              => [ 'required', ],
 
             'data.relationships.specialty'                                          => [ 'required' ],
             'data.relationships.specialty.type'                                     => [ 'required', 'in:Specialty' ],

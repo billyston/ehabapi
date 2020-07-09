@@ -30,10 +30,11 @@ class AppointmentResource extends JsonResource
                 'updated_at'        => $this -> updated_at -> toDateTimeString(),
             ],
 
-            'include' => $this -> when( $this -> relationLoaded( 'client' ) || $this -> relationLoaded( 'personnel' ),
+            'include' => $this -> when( $this -> relationLoaded( 'schedule' ) || $this -> relationLoaded( 'personnel' ) || $this -> relationLoaded( 'group' ),
             [
                 'personnel'         => new PersonnelResource( $this -> whenLoaded( 'personnel' ) ),
-                'client'            => ClientResource::collection( $this->whenLoaded('client') ),
+                'schedule'         => new ScheduleResource( $this -> whenLoaded( 'schedule' ) ),
+                'group'             => new GroupResource( $this -> whenLoaded( 'group' ) ),
             ])
         ];
     }

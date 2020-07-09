@@ -23,6 +23,8 @@ class ServiceResource extends JsonResource
                 'name'              => $this -> name,
                 'known_as'          => $this -> known_as,
                 'description'       => $this -> when( $this -> description, $this -> description ),
+                'start_time'        => $this -> start_time,
+                'end_time'          => $this -> end_time,
 
                 'created_at'        => $this -> created_at -> toDateTimeString(),
                 'updated_at'        => $this -> updated_at -> toDateTimeString(),

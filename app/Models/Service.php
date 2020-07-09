@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOneThrough;
 
 class Service extends Model
 {
@@ -21,7 +22,15 @@ class Service extends Model
      */
     public function specialty(): BelongsTo
     {
-        return $this -> belongsTo(Specialty::class );
+        return $this -> belongsTo( Specialty::class );
+    }
+
+    /**
+     * @return HasOneThrough
+     */
+    public function hospital(): HasOneThrough
+    {
+        return $this -> hasOneThrough( Hospital::class, Specialty::class );
     }
 
     /**
@@ -29,14 +38,6 @@ class Service extends Model
      */
     public function schedule(): HasMany
     {
-        return $this -> hasMany(Schedule::class );
-    }
-
-    /**
-     * @return BelongsTo
-     */
-    public function personnel(): BelongsToMany
-    {
-        return $this -> BelongsToMany(Personnel::class );
+        return $this -> hasMany( Schedule::class );
     }
 }

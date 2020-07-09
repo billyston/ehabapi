@@ -36,7 +36,7 @@ Trait AuthenticatesJwtUsers
         (
             $resource[ 'data' ][ 'attributes' ],
             [
-                'include' =>
+                'token' =>
                 [
                     'token_type' => 'bearer',
                     'expires' => guard( $this -> guard_name) -> factory() -> getTTL() * 60,

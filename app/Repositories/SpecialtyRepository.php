@@ -2,11 +2,15 @@
 
 namespace App\Repositories;
 
+use App\Http\Requests\ServiceRequest;
 use App\Http\Requests\SpecialtyRequest;
+use App\Http\Resources\ServiceResource;
 use App\Http\Resources\SpecialtyResource;
+use App\Jobs\StoreServiceJob;
 use App\Jobs\StoreSpecialtyJob;
+use App\Jobs\UpdateServiceJob;
 use App\Jobs\UpdateSpecialtyJob;
-use App\Models\Hospital;
+use App\Models\Service;
 use App\Models\Specialty;
 use App\Traits\Relatives;
 
@@ -24,7 +28,6 @@ class SpecialtyRepository implements SpecialtyRepositoryInterface
 
     /**
      * @param SpecialtyRequest $specialtyRequest
-     * @param Specialty $specialty
      * @return \Illuminate\Http\JsonResponse|mixed|object
      */
     public function store( SpecialtyRequest $specialtyRequest )
@@ -45,7 +48,7 @@ class SpecialtyRepository implements SpecialtyRepositoryInterface
     /**
      * @param SpecialtyRequest $specialtyRequest
      * @param Specialty $specialty
-     * @return mixed|void
+     * @return \Illuminate\Http\JsonResponse|mixed|object
      */
     public function update( SpecialtyRequest $specialtyRequest, Specialty $specialty )
     {
@@ -61,12 +64,12 @@ class SpecialtyRepository implements SpecialtyRepositoryInterface
         try
         {
             $specialty -> delete();
-            return response()->json('', 204);
+            return response()->json('', 204 );
         }
 
         catch ( \Exception $exception )
         {
-            report($exception);
+            report( $exception );
             return errorResponse();
         }
     }

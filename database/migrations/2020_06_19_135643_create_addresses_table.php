@@ -24,7 +24,7 @@ class CreateAddressesTable extends Migration
             $table -> string('region');
             $table -> string('city');
             $table -> string('street_name') -> index();
-            $table -> string('house_number');
+            $table -> string('house_number') -> nullable();
 
             $table -> morphs('addressable');
             $table -> boolean('is_verified') ->default(false);

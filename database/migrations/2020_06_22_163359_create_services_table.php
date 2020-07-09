@@ -20,11 +20,11 @@ class CreateServicesTable extends Migration
             $table -> unsignedBigInteger('specialty_id');
 
             $table -> string('name') -> unique();
-            $table -> string('known_as') -> unique();
+            $table -> string('known_as') -> nullable();
             $table -> string('description') -> nullable();
 
-            $table -> time('start_time');
-            $table -> time('end_time');
+            $table -> string('start_time');
+            $table -> string('end_time');
 
             $table -> timestamps();
 

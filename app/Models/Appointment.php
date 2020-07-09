@@ -42,14 +42,6 @@ class Appointment extends Model
     /**
      * @return BelongsTo
      */
-    public function notification(): BelongsTo
-    {
-        return $this -> belongsTo( Notification::class );
-    }
-
-    /**
-     * @return BelongsTo
-     */
     public function personnel(): BelongsTo
     {
         return $this -> belongsTo(Personnel::class );

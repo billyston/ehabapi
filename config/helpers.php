@@ -7,7 +7,7 @@ use Illuminate\Support\Str;
 /*
  * Response for failed Authorization
  */
-function failedAuthorizationResponse ($message = '')
+function failedAuthorizationResponse ( $message = '')
 {
     throw new HttpResponseException(response()->json([
         'error' => true,
@@ -55,9 +55,9 @@ function defaultDisk()
     return 'public';
 }
 
-function kuditelId()
+function SmartId()
 {
-    return (string)Str::uuid();
+    return ( string ) Str::uuid();
 }
 
 /**
@@ -93,3 +93,13 @@ function getStatusFilter()
 {
     return request()->get('status');
 }
+
+function checkResourceRelation(bool $is_related)
+{
+    abort_unless(
+        $is_related,
+        409,
+        'the resource you are trying to access does not belong to your hospital'
+    );
+}
+
