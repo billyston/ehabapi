@@ -32,6 +32,7 @@ Route::domain('system.' . env('APP_URL') ) -> group( static function ()
             Route::apiResource('groups', 'GroupController');
             Route::apiResource('clients', 'ClientController');
             Route::apiResource('next-of-kins', 'NextOfKinController');
+            Route::apiResource('messages', 'MessageController');
             Route::apiResource('appointments', 'AppointmentController');
             Route::apiResource('registrars', 'RegistrarController');
         });
@@ -53,6 +54,7 @@ Route::domain('administrator.' . env( 'APP_URL' ) ) -> group( static function ()
             Route::apiResource('hospital.personnel', 'HospitalPersonnelController' );
             Route::apiResource('hospital.groups', 'HospitalGroupController' );
             Route::apiResource('hospital.clients', 'HospitalClientController' );
+            Route::apiResource('hospital.messages', 'HospitalMessageController' );
             Route::apiResource('hospital.appointments', 'HospitalAppointmentController' );
         });
     });

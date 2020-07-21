@@ -21,6 +21,7 @@ class ClientResource extends JsonResource
 
             'attributes' =>
             [
+                'title'             => $this -> title,
                 'smart_id'          => $this -> smart_id,
                 'first_name'        => $this -> first_name,
                 'middle_name'       => $this -> middle_name,

@@ -43,6 +43,14 @@ class Client extends User
     }
 
     /**
+     * @return BelongsTo
+     */
+    public function appointment(): HasMany
+    {
+        return $this -> hasMany( Appointment::class );
+    }
+
+    /**
      * @return MorphOne
      */
     public function address()

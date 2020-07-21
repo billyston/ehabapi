@@ -32,11 +32,14 @@ class StoreAppointmentJob implements ShouldQueue
     {
         $Appointment = new Appointment( $this -> theRequest [ 'data.attributes' ] );
 
-        $Appointment -> group()     -> associate( $this -> theRequest [ 'data.relationships.group.data.id' ] );
-        $Appointment -> schedule()  -> associate( $this -> theRequest [ 'data.relationships.schedule.data.id' ] );
+        $Appointment -> message()   -> associate( $this -> theRequest [ 'data.relationships.message.data.id' ] );
+        $Appointment -> client()    -> associate( $this -> theRequest [ 'data.relationships.client.data.id' ] );
         $Appointment -> personnel() -> associate( $this -> theRequest [ 'data.relationships.personnel.data.id' ] );
+        $Appointment -> schedule()  -> associate( $this -> theRequest [ 'data.relationships.schedule.data.id' ] );
 
         $Appointment -> save();
+
+        // Send SMS
 
         // Return appointment resource
         return ( new AppointmentResource( $Appointment ) ) -> response() -> setStatusCode(201 );

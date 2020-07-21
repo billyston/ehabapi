@@ -69,15 +69,15 @@ class ClientRequest extends FormRequest
             'data.relationships.group.data.*.type'                                  => [ 'required', 'in:Group' ],
 
             // Next of kin
-            'data.relationships.next-of-kin'                                        => [ 'required' ],
-            'data.relationships.next-of-kin.data.type'                              => [ 'required', 'string', 'in:NextOfKin' ],
-            'data.relationships.next-of-kin.data.attributes.first_name'             => [ 'required', 'string' ],
-            'data.relationships.next-of-kin.data.attributes.middle_name'            => [ 'sometimes', 'string' ],
-            'data.relationships.next-of-kin.data.attributes.last_name'              => [ 'required', 'string' ],
-            'data.relationships.next-of-kin.data.attributes.gender'                 => [ 'required', 'string', 'in:male,female' ],
-            'data.relationships.next-of-kin.data.attributes.relation'               => [ 'required', 'string' ],
-            'data.relationships.next-of-kin.data.attributes.mobile_phone'           => [ 'required', 'min:10', 'numeric' ],
-            'data.relationships.next-of-kin.data.attributes.other_phone'            => [ 'min:10', 'numeric' ],
+            'data.relationships.next_of_kin'                                        => [ 'required' ],
+            'data.relationships.next_of_kin.data.type'                              => [ 'required', 'string', 'in:NextOfKin' ],
+            'data.relationships.next_of_kin.data.attributes.first_name'             => [ 'required', 'string' ],
+            'data.relationships.next_of_kin.data.attributes.middle_name'            => [ 'sometimes', 'string' ],
+            'data.relationships.next_of_kin.data.attributes.last_name'              => [ 'required', 'string' ],
+            'data.relationships.next_of_kin.data.attributes.gender'                 => [ 'required', 'string', 'in:male,female' ],
+            'data.relationships.next_of_kin.data.attributes.relation'               => [ 'required', 'string' ],
+            'data.relationships.next_of_kin.data.attributes.mobile_phone'           => [ 'required', 'min:10', 'numeric' ],
+            'data.relationships.next_of_kin.data.attributes.other_phone'            => [ 'min:10', 'numeric' ],
 
             // Address
             'data.relationships.address.data.type'                                  => [ 'required', 'string', 'in:Address' ],

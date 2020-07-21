@@ -16,19 +16,19 @@ class Appointment extends Model
     public function getRouteKeyName (){ return 'smart_id'; }
 
     /**
-     * @return BelongsToMany
+     * @return BelongsTo
      */
-    public function client(): BelongsToMany
+    public function message(): BelongsTo
     {
-        return $this -> belongsToMany(Client::class );
+        return $this -> belongsTo( Message::class );
     }
 
     /**
-     * @return BelongsTo
+     * @return BelongsToMany
      */
-    public function group(): BelongsTo
+    public function client(): BelongsTo
     {
-        return $this -> belongsTo( Group::class );
+        return $this -> belongsTo(Client::class );
     }
 
     /**

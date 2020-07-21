@@ -45,6 +45,9 @@ class StoreHospitalJob implements ShouldQueue
             // Store the phone
             ( new StorePhoneJob( $this -> theRequest, $Hospital ) ) -> handle();
 
+            // Create a general group for hospital
+//            ( new StoreGroupJob( '', $Hospital ) );
+
             // Return hospital resource
             $Hospital -> refresh();
             return ( new HospitalResource( $Hospital ) ) -> response() -> setStatusCode(201 );

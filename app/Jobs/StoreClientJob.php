@@ -42,7 +42,7 @@ class StoreClientJob implements ShouldQueue
             $this -> attachGroups( $Client, $this -> getAttributes()[ 'relationships' ][ 'group' ] );
 
             // Store next_of_kin
-            ( new StoreNextOfKinJob( $this -> theRequest -> validated()[ 'data' ][ 'relationships' ][ 'next-of-kin' ][ 'data' ], $Client ) ) -> handle();
+            ( new StoreNextOfKinJob( $this -> theRequest -> validated()[ 'data' ][ 'relationships' ][ 'next_of_kin' ][ 'data' ], $Client ) ) -> handle();
 
             // Store the address
             ( new StoreAddressJob( $this -> theRequest, $Client ) ) -> handle();

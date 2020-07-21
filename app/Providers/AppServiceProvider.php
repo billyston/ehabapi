@@ -8,6 +8,7 @@ use App\Models\Appointment;
 use App\Models\Client;
 use App\Models\Group;
 use App\Models\Hospital;
+use App\Models\Message;
 use App\Models\NextOfKin;
 use App\Models\Personnel;
 use App\Models\Phone;
@@ -21,6 +22,7 @@ use App\Observers\AppointmentObserver;
 use App\Observers\ClientObserver;
 use App\Observers\GroupObserver;
 use App\Observers\HospitalObserver;
+use App\Observers\MessageObserver;
 use App\Observers\NextOfKinObserver;
 use App\Observers\PersonnelObserver;
 use App\Observers\PhoneObserver;
@@ -62,5 +64,6 @@ class AppServiceProvider extends ServiceProvider
         Client::observe( ClientObserver::class );
         NextOfKin::observe( NextOfKinObserver::class );
         Appointment::observe( AppointmentObserver::class );
+        Message::observe( MessageObserver::class );
     }
 }

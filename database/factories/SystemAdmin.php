@@ -19,7 +19,7 @@ $factory -> define(SystemAdmin::class, function ( Faker $faker)
         'position' => 'Programmer',
 
         'email' => '',
-        'password' => 'sysadmin',
+        'password' => 'password',
 
         'smart_id' => $faker -> uuid,
         'status' => 'active',

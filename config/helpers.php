@@ -103,3 +103,7 @@ function checkResourceRelation(bool $is_related)
     );
 }
 
+function sendSMS ()
+{
+    
+}

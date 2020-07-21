@@ -5,6 +5,7 @@ namespace App\Models;
 use App\User;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 
@@ -54,9 +55,9 @@ class Personnel extends User
     /**
      * @return BelongsToMany
      */
-    public function appointment(): BelongsToMany
+    public function appointment(): HasMany
     {
-        return $this -> belongsToMany( Appointment::class );
+        return $this -> hasMany( Appointment::class );
     }
 
     /**

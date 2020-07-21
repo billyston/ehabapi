@@ -10,6 +10,8 @@ use App\Repositories\Administrators\HospitalClientRepository;
 use App\Repositories\Administrators\HospitalClientRepositoryInterface;
 use App\Repositories\Administrators\HospitalGroupRepository;
 use App\Repositories\Administrators\HospitalGroupRepositoryInterface;
+use App\Repositories\Administrators\HospitalMessageRepository;
+use App\Repositories\Administrators\HospitalMessageRepositoryInterface;
 use App\Repositories\Administrators\HospitalPersonnelRepository;
 use App\Repositories\Administrators\HospitalPersonnelRepositoryInterface;
 use App\Repositories\Administrators\HospitalScheduleRepository;
@@ -26,6 +28,8 @@ use App\Repositories\GroupRepository;
 use App\Repositories\GroupRepositoryInterface;
 use App\Repositories\HospitalRepository;
 use App\Repositories\HospitalRepositoryInterface;
+use App\Repositories\MessageRepository;
+use App\Repositories\MessageRepositoryInterface;
 use App\Repositories\PersonnelRepository;
 use App\Repositories\PersonnelRepositoryInterface;
 use App\Repositories\RegistrarRepository;
@@ -58,6 +62,7 @@ class RepositoryServiceProvider extends ServiceProvider
         $this -> app -> bind( GroupRepositoryInterface::class, GroupRepository::class );
         $this -> app -> bind( ClientRepositoryInterface::class, ClientRepository::class );
         $this -> app -> bind( AppointmentRepositoryInterface::class, AppointmentRepository::class );
+        $this -> app -> bind( MessageRepositoryInterface::class, MessageRepository::class );
 
         // Administrator's repo
         $this -> app -> bind( HospitalSpecialtyRepositoryInterface::class, HospitalSpecialtyRepository::class );
@@ -67,6 +72,7 @@ class RepositoryServiceProvider extends ServiceProvider
         $this -> app -> bind( HospitalGroupRepositoryInterface::class, HospitalGroupRepository::class );
         $this -> app -> bind( HospitalClientRepositoryInterface::class, HospitalClientRepository::class );
         $this -> app -> bind( HospitalAppointmentRepositoryInterface::class, HospitalAppointmentRepository::class );
+        $this -> app -> bind( HospitalMessageRepositoryInterface::class, HospitalMessageRepository::class );
     }
 
     /**

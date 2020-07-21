@@ -18,16 +18,19 @@ class CreateAppointmentsTable extends Migration
             $table -> id();
             $table -> uuid('smart_id') -> index();
 
-            $table -> unsignedBigInteger('group_id' );
+            $table -> unsignedBigInteger('message_id' );
+            $table -> unsignedBigInteger('client_id' );
             $table -> unsignedBigInteger('schedule_id' );
             $table -> unsignedBigInteger('personnel_id' );
 
             $table -> dateTime( 'appointment_date' );
-            $table -> integer('interval' );
+            $table -> time( 'appointment_time' );
+            $table -> string('status') ->default( '1' );
 
-            $table -> foreign('group_id')       -> references('id') -> on('groups')     -> onDelete('cascade' );
-            $table -> foreign('schedule_id')     -> references('id') -> on('schedules')   -> onDelete('cascade' );
+            $table -> foreign('message_id')     -> references('id') -> on('messages') -> onDelete('cascade' );
+            $table -> foreign('client_id')      -> references('id') -> on('clients')   -> onDelete('cascade' );
             $table -> foreign('personnel_id')   -> references('id') -> on('personnels') -> onDelete('cascade' );
+            $table -> foreign('schedule_id')    -> references('id') -> on('schedules')   -> onDelete('cascade' );
 
             $table -> timestamps();
         });

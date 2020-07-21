@@ -40,4 +40,12 @@ class Service extends Model
     {
         return $this -> hasMany( Schedule::class );
     }
+
+    /**
+     * @return BelongsTo
+     */
+    public function message(): HasMany
+    {
+        return $this -> hasMany( Message::class );
+    }
 }

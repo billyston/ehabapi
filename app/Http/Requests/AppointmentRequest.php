@@ -41,26 +41,26 @@ class AppointmentRequest extends FormRequest
             'data.type'                                                             => [ 'required', 'string', 'in:Appointment' ],
             'data.attributes.appointment_date'                                      => [ 'required', 'date_format:Y-m-d', 'after:yesterday' ],
 
-            // Schedules
-            'data.relationships.group'                                              => [ 'required' ],
-            'data.relationships.group.data.type'                                    => [ 'required', 'string', 'in:Group' ],
-            'data.relationships.group.data.id'                                      => [ 'required', 'exists:groups,id' ],
+            // Message
+            'data.relationships.message'                                            => [ 'required' ],
+            'data.relationships.message.data.type'                                  => [ 'required', 'string', 'in:Message' ],
+            'data.relationships.message.data.id'                                    => [ 'required', 'exists:messages,id' ],
 
             // Clients
-//            'data.relationships.client'                                             => [ 'required' ],
-//            'data.relationships.client.data'                                        => [ 'required' ],
-//            'data.relationships.client.data.*.type'                                 => [ 'required', 'in:Client' ],
-//            'data.relationships.client.data.*.id'                                   => [ 'required', 'exists:clients,id' ],
-
-            // Schedules
-            'data.relationships.schedule'                                           => [ 'required' ],
-            'data.relationships.schedule.data.type'                                 => [ 'required', 'string', 'in:Schedule' ],
-            'data.relationships.schedule.data.id'                                   => [ 'required', 'exists:schedules,id' ],
+            'data.relationships.client'                                             => [ 'required' ],
+            'data.relationships.client.data'                                        => [ 'required' ],
+            'data.relationships.client.data.*.type'                                 => [ 'required', 'in:Client' ],
+            'data.relationships.client.data.*.id'                                   => [ 'required', 'exists:clients,id' ],
 
             // Personnel
             'data.relationships.personnel'                                          => [ 'required' ],
             'data.relationships.personnel.data.type'                                => [ 'required', 'string', 'in:Personnel' ],
-            'data.relationships.personnel.data.id'                                  => [ 'required', 'exists:personnels,id' ]
+            'data.relationships.personnel.data.id'                                  => [ 'required', 'exists:personnels,id' ],
+
+            // Schedules
+            'data.relationships.schedule'                                           => [ 'required' ],
+            'data.relationships.schedule.data.type'                                 => [ 'required', 'string', 'in:Schedule' ],
+            'data.relationships.schedule.data.id'                                   => [ 'required', 'exists:schedules,id' ]
         ];
     }
 }

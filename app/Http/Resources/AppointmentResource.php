@@ -15,7 +15,7 @@ class AppointmentResource extends JsonResource
     public function toArray( $request )
     {
         return
-            [
+        [
             'id'                    => $this -> id,
             'type'                  => 'Appointment',
 
@@ -30,11 +30,12 @@ class AppointmentResource extends JsonResource
                 'updated_at'        => $this -> updated_at -> toDateTimeString(),
             ],
 
-            'include' => $this -> when( $this -> relationLoaded( 'schedule' ) || $this -> relationLoaded( 'personnel' ) || $this -> relationLoaded( 'group' ),
+            'include' => $this -> when( $this -> relationLoaded( 'message' ) || $this -> relationLoaded( 'client' ) || $this -> relationLoaded( 'personnel' ) || $this -> relationLoaded( 'schedule' ),
             [
+                'message'           => new MessageResource( $this -> whenLoaded( 'message' ) ),
+                'client'            => new ClientResource( $this -> whenLoaded( 'client' ) ),
                 'personnel'         => new PersonnelResource( $this -> whenLoaded( 'personnel' ) ),
-                'schedule'         => new ScheduleResource( $this -> whenLoaded( 'schedule' ) ),
-                'group'             => new GroupResource( $this -> whenLoaded( 'group' ) ),
+                'schedule'          => new ScheduleResource( $this -> whenLoaded( 'schedule' ) ),
             ])
         ];
     }
