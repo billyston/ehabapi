@@ -40,6 +40,7 @@ class StoreAppointmentJob implements ShouldQueue
         $Appointment -> save();
 
         // Send SMS
+        sendSMS( $Appointment );
 
         // Return appointment resource
         return ( new AppointmentResource( $Appointment ) ) -> response() -> setStatusCode(201 );

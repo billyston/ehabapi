@@ -102,8 +102,3 @@ function checkResourceRelation(bool $is_related)
         'the resource you are trying to access does not belong to your hospital'
     );
 }
-
-function sendSMS ()
-{
-    
-}

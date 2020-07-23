@@ -36,6 +36,6 @@ class StoreMessageJob implements ShouldQueue
         $Message -> save();
 
         // Return appointment resource
-        return ( new MessageResource( $Message ) ) -> response() -> setStatusCode(201 );
+        return response( new MessageResource( $Message ), 201 );
     }
 }

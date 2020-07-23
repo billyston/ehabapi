@@ -24,7 +24,7 @@ class CreateAppointmentsTable extends Migration
             $table -> unsignedBigInteger('personnel_id' );
 
             $table -> dateTime( 'appointment_date' );
-            $table -> time( 'appointment_time' );
+            $table -> string( 'appointment_time' );
             $table -> string('status') ->default( '1' );
 
             $table -> foreign('message_id')     -> references('id') -> on('messages') -> onDelete('cascade' );

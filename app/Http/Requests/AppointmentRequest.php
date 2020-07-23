@@ -39,7 +39,8 @@ class AppointmentRequest extends FormRequest
         [
             'data'                                                                  => [ 'required' ],
             'data.type'                                                             => [ 'required', 'string', 'in:Appointment' ],
-            'data.attributes.appointment_date'                                      => [ 'required', 'date_format:Y-m-d', 'after:yesterday' ],
+            'data.attributes.appointment_date'                                      => [ 'required', 'date_format:Y-m-d' ],
+            'data.attributes.appointment_time'                                      => [ 'required', 'string' ],
 
             // Message
             'data.relationships.message'                                            => [ 'required' ],
@@ -49,8 +50,8 @@ class AppointmentRequest extends FormRequest
             // Clients
             'data.relationships.client'                                             => [ 'required' ],
             'data.relationships.client.data'                                        => [ 'required' ],
-            'data.relationships.client.data.*.type'                                 => [ 'required', 'in:Client' ],
-            'data.relationships.client.data.*.id'                                   => [ 'required', 'exists:clients,id' ],
+            'data.relationships.client.data.type'                                   => [ 'required', 'in:Client' ],
+            'data.relationships.client.data.id'                                     => [ 'required', 'exists:clients,id' ],
 
             // Personnel
             'data.relationships.personnel'                                          => [ 'required' ],

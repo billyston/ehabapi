@@ -3,10 +3,12 @@
 namespace App\Http\Controllers\Administrators;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\MessageRequest;
+use App\Jobs\StoreMessageJob;
 use App\Models\Hospital;
 use App\Models\Message;
 use App\Repositories\Administrators\HospitalMessageRepositoryInterface;
-use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class HospitalMessageController extends Controller
 {
@@ -27,6 +29,15 @@ class HospitalMessageController extends Controller
     public function index()
     {
         return $this -> theRepository -> index();
+    }
+
+    /**
+     * @param MessageRequest $messageRequest
+     * @return Response
+     */
+    public function store( MessageRequest $messageRequest ) : Response
+    {
+        return $this -> dispatchNow( new StoreMessageJob( $messageRequest ) );
     }
 
     /**

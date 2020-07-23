@@ -25,7 +25,7 @@ class MessageResource extends JsonResource
                 'client_message'    => $this -> client_message,
                 'personnel_message' => $this -> personnel_message,
 
-                'created_at'        => $this -> created_at -> toDateTimeString(),
+                'created_at'        => $this -> created_at -> diffForHumans(),
                 'updated_at'        => $this -> updated_at -> toDateTimeString(),
             ],
 
