@@ -5,6 +5,7 @@ namespace App\Jobs;
 use App\Http\Requests\AppointmentRequest;
 use App\Http\Resources\AppointmentResource;
 use App\Models\Appointment;
+use App\Traits\SMSNotification;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
@@ -13,7 +14,7 @@ use Illuminate\Queue\SerializesModels;
 
 class StoreAppointmentJob implements ShouldQueue
 {
-    use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
+    use Dispatchable, InteractsWithQueue, Queueable, SerializesModels, SMSNotification;
     private $theRequest;
 
     /**
@@ -30,19 +31,19 @@ class StoreAppointmentJob implements ShouldQueue
      */
     public function handle()
     {
-        $Appointment = new Appointment( $this -> theRequest [ 'data.attributes' ] );
+        $appointment = new Appointment( $this -> theRequest [ 'data.attributes' ] );
 
-        $Appointment -> message()   -> associate( $this -> theRequest [ 'data.relationships.message.data.id' ] );
-        $Appointment -> client()    -> associate( $this -> theRequest [ 'data.relationships.client.data.id' ] );
-        $Appointment -> personnel() -> associate( $this -> theRequest [ 'data.relationships.personnel.data.id' ] );
-        $Appointment -> schedule()  -> associate( $this -> theRequest [ 'data.relationships.schedule.data.id' ] );
+        $appointment -> message()   -> associate( $this -> theRequest [ 'data.relationships.message.data.id' ] );
+        $appointment -> client()    -> associate( $this -> theRequest [ 'data.relationships.client.data.id' ] );
+        $appointment -> personnel() -> associate( $this -> theRequest [ 'data.relationships.personnel.data.id' ] );
+        $appointment -> schedule()  -> associate( $this -> theRequest [ 'data.relationships.schedule.data.id' ] );
 
-        $Appointment -> save();
+        $appointment -> save();
 
-        // Send SMS
-        sendSMS( $Appointment );
+        // Send SMSNotification
+        $this -> sendSMS( $appointment );
 
         // Return appointment resource
-        return ( new AppointmentResource( $Appointment ) ) -> response() -> setStatusCode(201 );
+        return ( new AppointmentResource( $appointment ) ) -> response() -> setStatusCode(201 );
     }
 }

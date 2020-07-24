@@ -24,6 +24,7 @@ class AppointmentResource extends JsonResource
                 'smart_id'          => $this -> smart_id,
 
                 'appointment_date'  => $this -> appointment_date,
+                'appointment_time'  => $this -> appointment_time,
                 'status'            => $this -> status,
 
                 'created_at'        => $this -> created_at -> toDateTimeString(),
