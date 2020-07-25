@@ -30,7 +30,7 @@ class MessageRequest extends FormRequest
                 'data'                                                              => [ 'required' ],
                 'data.id'                                                           => [ 'required', 'string', 'exists:messages,id' ],
                 'data.type'                                                         => [ 'required', 'string', 'in:Message' ],
-                'data.attributes.message_header'                                    => [ 'sometime', 'string' ],
+                'data.attributes.message_title'                                     => [ 'sometime', 'string', 'unique:messages' ],
                 'data.attributes.client_message'                                    => [ 'sometime', 'string' ],
                 'data.attributes.personnel_message'                                 => [ 'sometime', 'string' ],
             ];
@@ -40,7 +40,7 @@ class MessageRequest extends FormRequest
         [
             'data'                                                                  => [ 'required' ],
             'data.type'                                                             => [ 'required', 'string', 'in:Message' ],
-            'data.attributes.message_header'                                        => [ 'required', 'string' ],
+            'data.attributes.message_title'                                         => [ 'required', 'string' ],
             'data.attributes.client_message'                                        => [ 'required', 'string' ],
             'data.attributes.personnel_message'                                     => [ 'required', 'string' ],
 

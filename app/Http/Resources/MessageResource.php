@@ -21,7 +21,7 @@ class MessageResource extends JsonResource
             [
                 'smart_id'          => $this -> smart_id,
 
-                'message_header'    => $this -> message_header,
+                'message_title'    => $this -> message_title,
                 'client_message'    => $this -> client_message,
                 'personnel_message' => $this -> personnel_message,
 

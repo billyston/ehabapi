@@ -29,7 +29,7 @@ class SMSNotificationResource extends JsonResource
 
                 'client'            => $this -> client      -> load( 'phone' ),
                 'personnel'         => $this -> personnel   -> load( 'phone' ),
-                'message'           => $this -> message     -> only( 'message_header', 'client_message', 'personnel_message' ),
+                'message'           => $this -> message     -> only( 'message_title', 'client_message', 'personnel_message' ),
                 'schedule'          => $this -> schedule    -> only( 'starts_at', 'ends_at' ),
             ],
         ];

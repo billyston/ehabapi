@@ -20,7 +20,7 @@ class CreateMessagesTable extends Migration
 
             $table -> unsignedBigInteger('service_id' );
 
-            $table -> string('message_header' );
+            $table -> string('message_title' );
             $table -> string('client_message' );
             $table -> string('personnel_message' );
 

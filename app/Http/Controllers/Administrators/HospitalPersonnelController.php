@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\PersonnelRequest;
 use App\Http\Resources\PersonnelResource;
 use App\Jobs\StorePersonnelJob;
+use App\Models\Hospital;
+use App\Models\Personnel;
 use App\Repositories\Administrators\HospitalPersonnelRepositoryInterface;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -41,14 +43,13 @@ class HospitalPersonnelController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param Hospital $hospital
+     * @param Personnel $personnel
+     * @return PersonnelResource
      */
-    public function show( $id )
+    public function show( Hospital $hospital, Personnel $personnel )
     {
-        //
+        return $this -> theRepository -> show( $hospital, $personnel );
     }
 
     /**
@@ -58,7 +59,7 @@ class HospitalPersonnelController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update( Request $request, $id )
     {
         //
     }
