@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5af97b17-75a8-4dd9-96c4-60689e9e17a5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalAppointmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalAppointmentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalClientController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalSpecialtyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalSpecialtyController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,11 +19,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalAppointmentController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="671">
+            <state relative-caret-position="944">
               <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalClientController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalSpecialtyController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="62" column="28" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -65,8 +83,6 @@
         <option value="$PROJECT_DIR$/app/Http/Resources/GroupResource.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Administrators/HospitalClientRepository.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Administrators/HospitalClientRepositoryInterface.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalClientController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalSpecialtyController.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Administrators/HospitalAppointmentRepositoryInterface.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Administrators/HospitalAppointmentRepository.php" />
         <option value="$PROJECT_DIR$/app/Http/Resources/PersonnelResource.php" />
@@ -113,6 +129,8 @@
         <option value="$PROJECT_DIR$/app/Repositories/Administrators/HospitalPersonnelRepositoryInterface.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Administrators/HospitalPersonnelRepository.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalAppointmentController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalClientController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalSpecialtyController.php" />
       </list>
     </option>
   </component>
@@ -774,12 +792,12 @@
       <workItem from="1595597128304" duration="1576000" />
       <workItem from="1595598966203" duration="524000" />
       <workItem from="1595734572157" duration="22000" />
-      <workItem from="1595806849056" duration="128000" />
+      <workItem from="1595806849056" duration="579000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="350068000" />
+    <option name="totallyTimeSpent" value="350519000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -811,20 +829,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Repositories/Administrators/HospitalClientRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalClientController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalGroupController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -1161,8 +1165,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalAppointmentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
+        <state relative-caret-position="944">
           <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalClientController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalSpecialtyController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="62" column="28" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
         </state>
       </provider>
     </entry>

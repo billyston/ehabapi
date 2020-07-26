@@ -57,13 +57,10 @@ class HospitalSpecialtyController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param HospitalSpecialtyRequest $hospitalSpecialtyRequest
+     * @param Hospital $hospital
      */
-    public function update( Request $request, $id )
+    public function update( HospitalSpecialtyRequest $hospitalSpecialtyRequest, Hospital $hospital )
     {
         //
     }
