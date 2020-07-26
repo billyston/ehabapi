@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5af97b17-75a8-4dd9-96c4-60689e9e17a5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalPersonnelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalPersonnelController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/MessageRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/MessageRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/MessageResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/MessageResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/SMSNotificationResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/SMSNotificationResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Administrators/HospitalPersonnelRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Administrators/HospitalPersonnelRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Administrators/HospitalPersonnelRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Administrators/HospitalPersonnelRepositoryInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_06_26_125726_create_messages_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_06_26_125726_create_messages_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalAppointmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalAppointmentController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +18,17 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalAppointmentController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="671">
+              <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -64,7 +68,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalClientController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalSpecialtyController.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Administrators/HospitalAppointmentRepositoryInterface.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalAppointmentController.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Administrators/HospitalAppointmentRepository.php" />
         <option value="$PROJECT_DIR$/app/Http/Resources/PersonnelResource.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/GroupRequest.php" />
@@ -109,6 +112,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalPersonnelController.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Administrators/HospitalPersonnelRepositoryInterface.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Administrators/HospitalPersonnelRepository.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalAppointmentController.php" />
       </list>
     </option>
   </component>
@@ -225,7 +229,7 @@
       <path value="$PROJECT_DIR$/vendor/psr/http-client" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -234,7 +238,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -412,6 +415,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -769,16 +773,19 @@
       <workItem from="1595595221865" duration="1049000" />
       <workItem from="1595597128304" duration="1576000" />
       <workItem from="1595598966203" duration="524000" />
+      <workItem from="1595734572157" duration="22000" />
+      <workItem from="1595806849056" duration="128000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="349918000" />
+    <option name="totallyTimeSpent" value="350068000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.38125893" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3869814" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -804,16 +811,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Repositories/Administrators/HospitalMessageRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="e#51#90#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Repositories/Administrators/HospitalClientRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -1159,6 +1156,13 @@
             <element signature="e#331#482#0#PHP" />
             <element signature="e#513#625#0#PHP" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Administrators/HospitalAppointmentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="671">
+          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
         </state>
       </provider>
     </entry>

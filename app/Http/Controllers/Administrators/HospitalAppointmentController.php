@@ -52,24 +52,18 @@ class HospitalAppointmentController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param AppointmentRequest $appointmentRequest
+     * @param Appointment $appointment
      */
-    public function update( Request $request, $id )
+    public function update( AppointmentRequest $appointmentRequest, Appointment $appointment )
     {
         //
     }
 
     /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param Appointment $appointment
      */
-    public function destroy($id)
+    public function destroy( Appointment $appointment )
     {
         //
     }
