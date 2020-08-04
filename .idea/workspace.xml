@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5af97b17-75a8-4dd9-96c4-60689e9e17a5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-    </list>
+    <list default="true" id="5af97b17-75a8-4dd9-96c4-60689e9e17a5" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -666,16 +664,15 @@
       <workItem from="1596543386376" duration="249000" />
       <workItem from="1596546915519" duration="1514000" />
       <workItem from="1596568648845" duration="556000" />
-      <workItem from="1596571858245" duration="229000" />
+      <workItem from="1596571858245" duration="396000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="362699000" />
+    <option name="totallyTimeSpent" value="362866000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.42131618" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

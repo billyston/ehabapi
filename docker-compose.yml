@@ -9,7 +9,7 @@ services:
     image: nginx:stable-alpine
     container_name: nginx
     ports:
-      - "80:80"
+      - "8000:80"
 
     volumes:
       - .:/var/www/html
