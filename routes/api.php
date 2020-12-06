@@ -13,11 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::middleware('auth:api')->get('/user', function (Request $request) {
-//    return $request->user();
-//});
-
-// Admin routes
+// System admin routes
 Route::domain('system.' . env('APP_URL') ) -> group( static function ()
 {
     Route::group(['namespace' => 'SystemAdmins'], function ()

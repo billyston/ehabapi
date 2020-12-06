@@ -33,20 +33,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5af97b17-75a8-4dd9-96c4-60689e9e17a5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/smarthcs-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/smarthcs-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/smarthcs-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/api.ehab.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vagrant/machines/ehab/virtualbox/action_provision" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/ehab/virtualbox/action_provision" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vagrant/machines/ehab/virtualbox/action_set_name" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/ehab/virtualbox/action_set_name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vagrant/machines/ehab/virtualbox/box_meta" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/ehab/virtualbox/box_meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vagrant/machines/ehab/virtualbox/id" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/ehab/virtualbox/id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vagrant/machines/ehab/virtualbox/index_uuid" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/ehab/virtualbox/index_uuid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vagrant/machines/ehab/virtualbox/private_key" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/ehab/virtualbox/private_key" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vagrant/machines/ehab/virtualbox/synced_folders" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/ehab/virtualbox/synced_folders" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vagrant/machines/ehab/virtualbox/vagrant_cwd" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/ehab/virtualbox/vagrant_cwd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +52,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -181,6 +175,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -193,19 +188,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/app/Repositories/Administrators" />
-      <recent name="$PROJECT_DIR$/app/Http/Controllers/SystemAdmins" />
-      <recent name="$PROJECT_DIR$/app/Http/Controllers" />
-      <recent name="$PROJECT_DIR$/app/Http/Controllers/" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app/Repositories/Administrators" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Administrators" />
       <recent name="$PROJECT_DIR$/app/Models" />
       <recent name="$PROJECT_DIR$/database/migrations" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/app/Repositories/Administrators" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/SystemAdmins" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/" />
     </key>
   </component>
   <component name="RunManager" selected="Docker.Dockerfile">
@@ -563,6 +558,7 @@
       <workItem from="1605882170176" duration="1325000" />
       <workItem from="1605884167198" duration="291000" />
       <workItem from="1605886911264" duration="839000" />
+      <workItem from="1607157682931" duration="2612000" />
     </task>
     <servers />
   </component>
