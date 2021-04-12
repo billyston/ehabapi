@@ -33,11 +33,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5af97b17-75a8-4dd9-96c4-60689e9e17a5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/smarthcs-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/api.ehab.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Jobs/StoreServiceJob.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/StoreServiceJob.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/SpecialtyRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/SpecialtyRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +182,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -559,6 +557,22 @@
       <workItem from="1605884167198" duration="291000" />
       <workItem from="1605886911264" duration="839000" />
       <workItem from="1607157682931" duration="2612000" />
+      <workItem from="1607240986749" duration="217000" />
+      <workItem from="1607549459894" duration="2038000" />
+      <workItem from="1607951213236" duration="831000" />
+      <workItem from="1607952160175" duration="1573000" />
+      <workItem from="1607955629125" duration="598000" />
+      <workItem from="1607957762172" duration="449000" />
+      <workItem from="1608062621799" duration="1036000" />
+      <workItem from="1608064232232" duration="419000" />
+      <workItem from="1608066046124" duration="593000" />
+      <workItem from="1608067873396" duration="14000" />
+      <workItem from="1608225827130" duration="856000" />
+      <workItem from="1608245164163" duration="598000" />
+      <workItem from="1608247005461" duration="9000" />
+      <workItem from="1608642083364" duration="775000" />
+      <workItem from="1608642935885" duration="611000" />
+      <workItem from="1608646104429" duration="25000" />
     </task>
     <servers />
   </component>
@@ -594,6 +608,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605882801138" />
+    <state x="469" y="176" key="SettingsEditor" timestamp="1608642264753">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="469" y="176" key="SettingsEditor/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1608642264753" />
+    <state x="661" y="295" width="597" height="490" key="find.popup" timestamp="1607952222925">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="661" y="295" width="597" height="490" key="find.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1607952222925" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1605882238550">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

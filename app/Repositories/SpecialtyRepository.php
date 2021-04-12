@@ -2,15 +2,10 @@
 
 namespace App\Repositories;
 
-use App\Http\Requests\ServiceRequest;
 use App\Http\Requests\SpecialtyRequest;
-use App\Http\Resources\ServiceResource;
 use App\Http\Resources\SpecialtyResource;
-use App\Jobs\StoreServiceJob;
 use App\Jobs\StoreSpecialtyJob;
-use App\Jobs\UpdateServiceJob;
 use App\Jobs\UpdateSpecialtyJob;
-use App\Models\Service;
 use App\Models\Specialty;
 use App\Traits\Relatives;
 

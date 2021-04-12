@@ -5,9 +5,13 @@ namespace App\Jobs;
 use App\Http\Requests\ServiceRequest;
 use App\Http\Resources\ServiceResource;
 use App\Models\Service;
+use Exception;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Contracts\Routing\ResponseFactory;
 use Illuminate\Foundation\Bus\Dispatchable;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Response;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 
@@ -26,7 +30,7 @@ class StoreServiceJob implements ShouldQueue
     }
 
     /**
-     * @return \Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\JsonResponse|\Illuminate\Http\Response|object
+     * @return ResponseFactory|JsonResponse|Response|object
      */
     public function handle()
     {
@@ -40,7 +44,7 @@ class StoreServiceJob implements ShouldQueue
             return ( new ServiceResource( $Service ) ) -> response() -> setStatusCode(201 );
         }
 
-        catch ( \Exception $exception )
+        catch ( Exception $exception )
         {
             report( $exception );
             return response('something went wrong, please try again later', 500 );
